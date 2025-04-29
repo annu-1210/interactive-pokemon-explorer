@@ -173,12 +173,11 @@ body {
 
 @media (min-width: 768px) {
   .pokemon-card {
-    min-height: 28rem;
+    min-height: 22rem;
   }
 }
-
-@media (min-width: 1920px) {
+@media (min-width: 1280px) {
   .pokemon-card {
-    min-height: 36rem;
+    min-height: 28rem;
   }
 }
