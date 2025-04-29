@@ -1,4 +1,3 @@
-// components/SearchBar.tsx
 import TypeDropdown from "./TypeDropdown";
 
 interface SearchBarProps {
@@ -16,7 +15,10 @@ const SearchBar = ({
   onTypeChange,
   types,
 }: SearchBarProps) => (
-  <section className="search-filter container my-4" aria-label="Search and filter Pokémon">
+  <section
+    className="search-filter container my-4"
+    aria-label="Search and filter Pokémon"
+  >
     <div className="row g-3 align-items-center">
       <div className="col-12 col-md-6">
         <input

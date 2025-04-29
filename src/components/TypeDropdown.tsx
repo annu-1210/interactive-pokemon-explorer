@@ -1,4 +1,3 @@
-// components/TypeDropdown.tsx
 import { useEffect, useRef, useState } from "react";
 
 interface TypeDropdownProps {
@@ -7,14 +6,20 @@ interface TypeDropdownProps {
   onSelect: (type: string) => void;
 }
 
-const TypeDropdown: React.FC<TypeDropdownProps> = ({ selected, types, onSelect }) => {
+const TypeDropdown: React.FC<TypeDropdownProps> = ({
+  selected,
+  types,
+  onSelect,
+}) => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
-  // Close dropdown on outside click
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
         setIsOpen(false);
       }
     };

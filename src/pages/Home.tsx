@@ -65,13 +65,13 @@ const Home = () => {
         onTypeChange={setTypeFilter}
         types={types}
       />
-      <main className="container">
+      <main className="container text-white">
         {loading ? (
-          <p className="text-center">Loading Pokémon...</p>
+          <p className="text-center text-white">Loading Pokémon...</p>
         ) : error ? (
           <p className="text-danger text-center">{error}</p>
         ) : filtered.length === 0 ? (
-          <p className="text-center">No Pokémon found.</p>
+          <p className="text-center text-white">No Pokémon found.</p>
         ) : (
           <div className="row">
             {filtered.map((p) => (

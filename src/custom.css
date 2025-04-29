@@ -64,7 +64,6 @@ body {
   box-shadow: 0 10px 20px var(--custom-shadow);
 }
 
-/* Input Styles */
 .custom-input {
   border: 1px solid #ced4da;
   border-radius: 12px;
@@ -87,7 +86,6 @@ body {
   color: #8c8b8b;
 }
 
-/* Dropdown Toggle */
 .custom-dropdown-toggle {
   border: 1px solid #ced4da;
   background-color: #f8f9fb !important;
@@ -103,10 +101,9 @@ body {
   background-color: #f8f9fb;
 }
 
-/* Dropdown Menu */
 .custom-dropdown-menu {
-  position: absolute; /* <== This is crucial */
-  top: 100%; /* to push it just below the toggle button */
+  position: absolute;
+  top: 100%;
   left: 0;
   border-radius: 12px;
   padding: 0.3rem 0;
@@ -119,7 +116,6 @@ body {
   z-index: 1000;
 }
 
-/* Scrollbar (WebKit) */
 .custom-dropdown-menu::-webkit-scrollbar {
   width: 8px;
 }
@@ -131,7 +127,6 @@ body {
   background-color: #f0f0f0;
 }
 
-/* Dropdown Item */
 .custom-dropdown-item {
   padding: 0.5rem 1rem;
   font-size: 0.95rem;
