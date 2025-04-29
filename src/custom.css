@@ -1,0 +1,189 @@
+:root {
+  --custom-primary: #6c5ce7;
+  --custom-secondary: #00cec9;
+  --custom-bg: #b0b1b2;
+  --custom-card-bg: #dadada;
+  --custom-shadow: rgba(0, 0, 0, 0.1);
+}
+
+body {
+  background-color: #1d1c1c !important;
+  font-family: "Segoe UI", "Roboto", sans-serif;
+}
+
+.app-header {
+  background-color: transparent !important;
+}
+
+.btn-primary-custom {
+  background-color: var(--custom-secondary) !important;
+  border: none;
+}
+
+.input-primary {
+  border: 1px solid #ced4da;
+  border-radius: 12px;
+  padding: 0.6rem 1.1rem;
+  background-color: #f8f9fb;
+  font-size: 1rem;
+  color: #333;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.input-primary:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 0.2rem rgba(124, 58, 237, 0.2);
+  background-color: #fff;
+  outline: none;
+}
+
+.input-primary::placeholder {
+  color: #8c8b8b;
+}
+
+.pokemon-card {
+  background-color: rgb(149, 160, 145) !important;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  min-height: 24rem;
+}
+
+.card-body {
+  padding: 1.5rem 1rem !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.pokemon-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px var(--custom-shadow);
+}
+
+/* Input Styles */
+.custom-input {
+  border: 1px solid #ced4da;
+  border-radius: 12px;
+  padding: 0.6rem 1.1rem;
+  background-color: #f8f9fb;
+  font-size: 1rem;
+  color: #333;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.custom-input:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 0.2rem rgba(124, 58, 237, 0.2);
+  background-color: #fff;
+  outline: none;
+}
+
+.custom-input::placeholder {
+  color: #8c8b8b;
+}
+
+/* Dropdown Toggle */
+.custom-dropdown-toggle {
+  border: 1px solid #ced4da;
+  background-color: #f8f9fb !important;
+  border-radius: 12px;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  color: #333;
+  transition: all 0.2s ease-in-out;
+}
+
+.custom-dropdown-toggle:hover {
+  border-color: #7c3aed;
+  background-color: #f8f9fb;
+}
+
+/* Dropdown Menu */
+.custom-dropdown-menu {
+  position: absolute; /* <== This is crucial */
+  top: 100%; /* to push it just below the toggle button */
+  left: 0;
+  border-radius: 12px;
+  padding: 0.3rem 0;
+  background-color: #ffffff;
+  max-height: 200px;
+  overflow-y: auto;
+  animation: fadeSlide 0.2s ease-in-out;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc #f0f0f0;
+  z-index: 1000;
+}
+
+/* Scrollbar (WebKit) */
+.custom-dropdown-menu::-webkit-scrollbar {
+  width: 8px;
+}
+.custom-dropdown-menu::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+.custom-dropdown-menu::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+}
+
+/* Dropdown Item */
+.custom-dropdown-item {
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.custom-dropdown-item:hover {
+  background-color: #ede9fe;
+  color: #5b21b6;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 576px) {
+  .pokemon-card {
+    min-height: 28rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .pokemon-card {
+    min-height: 28rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .pokemon-card {
+    min-height: 36rem;
+  }
+}
